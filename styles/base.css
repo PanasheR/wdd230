@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  ;
+  text-align: center;
+}
+
+h2,
+h3 {
+  color: #D64933;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 40px;
+  background-color: black;
+  padding: 10px;
+}
+
+nav a {
+  color: #EEE5E9;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  padding: 10px;
+  height: 120px;
+  text-align: center;
+  background-color: #D64933;
+}
+
+header img {
+  max-height: 120%;
+  float: left;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card {
+  width: 320px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px 1px #888;
+  background-color: white;
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+#card1 {}
+
+#card2 {}
+
+#card3 {}
+
+footer {
+  text-align: center;
+  background-color: #D64933;
+  height: 100px;
+  padding: 20px;
+}
