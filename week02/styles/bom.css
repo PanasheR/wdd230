@@ -1,0 +1,13 @@
+body {
+  text-align: center;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+
+li {
+  text-decoration: none;
+}
