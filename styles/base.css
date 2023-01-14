@@ -5,19 +5,6 @@ body {
   margin: auto;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Roboto Condensed', sans-serif;
-  ;
-  text-align: center;
-}
-
-h1,
-h2 {
-  color: #13262F;
-}
-
 nav {
   display: flex;
   flex-direction: row;
@@ -26,7 +13,7 @@ nav {
   align-items: flex-end;
   align-content: flex-end;
   gap: 40px;
-  background-color: #13262F;
+  background-color: #000000;
   padding: 10px;
 }
 
@@ -42,13 +29,32 @@ ul {
 header {
   padding: 10px;
   height: 120px;
-  text-align: center;
-  background-color: #B0A084;
+  background-color: #13262F;
 }
 
 header img {
-  max-height: 120%;
+  max-height: 150%;
+  margin-top: -28px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px 1px #000000;
   float: left;
+}
+
+header h1 {
+  font-weight: 400;
+  margin-left: -25px;
+}
+
+h1 {
+  color: #EEE5E9;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  ;
+  text-align: center;
 }
 
 main {
@@ -57,6 +63,7 @@ main {
 }
 
 h2 {
+  color: #13262F;
   border-bottom: 2px #13262F solid;
 }
 
@@ -75,7 +82,7 @@ h3 {
 .card {
   width: 320px;
   border-radius: 3px;
-  box-shadow: 1px 1px 4px 1px #888;
+  box-shadow: 1px 1px 4px 1px #000000;
   background-color: white;
   font-family: "Arial", sans-serif;
   overflow: hidden;
@@ -85,7 +92,8 @@ h3 {
 
 footer {
   text-align: center;
-  background-color: #B0A084;
+  background-color: #13262F;
+  color: #EEE5E9;
   height: 100px;
   padding: 20px;
 }

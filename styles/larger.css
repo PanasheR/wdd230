@@ -1,8 +1,18 @@
 @media screen and (max-width: 600px) {
-  body {
-    display: block;
-  }
   .container {
     display: block;
+  }
+
+  nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  header {
+    float: none;
+  }
+
+  header img {
+    max-width: 80%;
   }
 }
