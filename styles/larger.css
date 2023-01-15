@@ -1,18 +1,18 @@
-@media screen and (max-width: 600px) {
-  .container {
-    display: block;
-  }
+@media only screen and (min-width: 40rem) {
 
+  /* beginning of media query */
   nav {
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row-reverse;
   }
 
-  header {
-    float: none;
+  .container {
+    grid-template-columns: 1fr 1fr;
   }
 
   header img {
-    max-width: 80%;
+    max-height: 150%;
+    margin-top: -28px;
   }
+
+  /* end of media query */
 }
