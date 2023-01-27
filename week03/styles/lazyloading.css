@@ -22,3 +22,8 @@ img {
     opacity: 1;
   }
 }
+
+footer {
+  max-width: fit-content;
+  margin: 0 auto;
+}
