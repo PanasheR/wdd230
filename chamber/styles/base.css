@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Nanum+Myeongjo:wght@800&family=News+Cycle&family=Old+Standard+TT:wght@700&family=Prata&family=Rajdhani:wght@300&family=Shadows+Into+Light&family=Slabo+27px&family=Solitreo&family=Tajawal&display=swap');
+
+:root {
+  --primary-color: #3066BE;
+  --secondary-color: #119DA4;
+  --tertiary-color: #80DED9;
+  --default: #000000;
+  --heading-font: 'Rajdhani', sans-serif;
+  --body-font: 'Tajawal', sans-serif;
+  --link-font: 'Cormorant Garamond', serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: var(--body-font);
+}
+
+h2,
+h3 {
+  font-family: var(--heading-font);
+}
+
+a {
+  font-family: var(--link-font);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: var(--default);
+}
+
+nav a:hover {
+  color: var(--tertiary-color);
+}
+
+#ham-menu {
+  margin-left: 90%;
+}
+
+nav .menu-item {
+  display: none;
+}
+
+nav a.open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  margin: 5px;
+}
+
+.close::before {
+  content: "❌";
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+}
+
+.banner img {
+  max-width: 100%;
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.banner a {
+  margin: auto;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  background-color: aqua;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 10%;
+  opacity: 0.6;
+}
+
+.banner a:hover,
+a:active {
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.container-item {
+  margin: 0.2rem 0rem;
+  padding: 5px;
+  background-color: var(--tertiary-color);
+}
+
+.container1 {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.container1-item {
+  background-color: aquamarine;
+  padding: 5px;
+}
+
+footer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiary-color);
+  padding: 0.3rem;
+  margin: 0.2rem;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}

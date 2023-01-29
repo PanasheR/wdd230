@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Nanum+Myeongjo:wght@800&family=News+Cycle&family=Old+Standard+TT:wght@700&family=Prata&family=Rajdhani:wght@300&family=Shadows+Into+Light&family=Slabo+27px&family=Solitreo&family=Tajawal&display=swap');
+
+:root {
+  --primary-color: #3066BE;
+  --secondary-color: #119DA4;
+  --tertiary-color: #80DED9;
+  --default: #000000;
+  --heading-font: 'Rajdhani', sans-serif;
+  --body-font: 'Tajawal', sans-serif;
+  --link-font: 'Cormorant Garamond', serif;
+}
+
+@media only screen and (min-width: 40em) {
+
+  body {
+    background-color: var(--primary-color);
+    font-family: var(--body-font);
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #ham-menu {
+    display: none;
+  }
+
+  h2,
+  h3 {
+    font-family: var(--heading-font);
+  }
+
+  a {
+    font-family: var(--link-font);
+  }
+
+
+  main {
+    max-width: fit-content;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+  }
+
+  .banner {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+  }
+
+  .banner img {
+    max-width: 100%;
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .banner a {
+    margin: auto;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-color: aqua;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10%;
+    opacity: 0.6;
+  }
+
+  .banner a:hover,
+  a:active {
+    opacity: 1;
+  }
+
+  .container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .container-item {
+    margin: 0.2rem 0rem;
+    padding: 5px;
+    background-color: var(--tertiary-color);
+  }
+
+  .container1 {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+  }
+
+  .container1-item {
+    background-color: aquamarine;
+    padding: 5px;
+  }
+
+  footer {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary-color);
+    padding: 0.3rem;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
