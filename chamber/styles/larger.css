@@ -17,6 +17,10 @@
     font-family: var(--body-font);
   }
 
+  h1 {
+    text-align: center;
+  }
+
   nav {
     display: flex;
     flex-direction: row-reverse;
@@ -40,6 +44,7 @@
     display: none;
   }
 
+  h1,
   h2,
   h3 {
     font-family: var(--heading-font);
