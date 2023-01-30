@@ -20,6 +20,20 @@
   nav {
     display: flex;
     flex-direction: row-reverse;
+    gap: 0.1em;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  nav .menu-item {
+    font-family: var(--link-font);
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+  }
+
+  nav .menu-item:hover {
+    color: var(--tertiary-color);
   }
 
   #ham-menu {
@@ -45,6 +59,7 @@
   .banner {
     max-width: 100%;
     margin: 0 auto;
+    margin-top: 0.5em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
