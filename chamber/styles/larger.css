@@ -79,6 +79,7 @@
 
   .banner a {
     margin: auto;
+    color: #000;
     grid-column: 1/1;
     grid-row: 1/1;
     background-color: aqua;
