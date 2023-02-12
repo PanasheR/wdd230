@@ -19,6 +19,7 @@
 
   h1 {
     text-align: center;
+    color: var(--tertiary-color);
   }
 
   nav {
@@ -27,13 +28,14 @@
     gap: 0.1em;
     max-width: 90%;
     margin: 0 auto;
+    background-color: var(--default);
   }
 
   nav .menu-item {
     font-family: var(--link-font);
     text-decoration: none;
     color: #fff;
-    padding: 5px;
+    padding: 2rem;
   }
 
   nav .menu-item:hover {
@@ -64,7 +66,6 @@
   .banner {
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 0.5em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -107,24 +108,35 @@
     background-color: var(--tertiary-color);
   }
 
+  .container-item:first-child {
+    border-right: var(--secondary-color) 2px solid;
+  }
+
   .container1 {
     max-width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    gap: 0.2rem;
+    gap: 1rem;
   }
 
   .container1-item {
     background-color: aquamarine;
     padding: 5px;
+    border: #000000 2px solid;
+    box-shadow: #fff 2px;
+  }
+
+  .container1-item h3 {
+    border-bottom: var(--secondary-color) 2px solid;
   }
 
   footer {
     max-width: 90%;
     display: flex;
     flex-direction: column;
-    background-color: var(--tertiary-color);
+    background-color: var(--default);
+    color: var(--tertiary-color);
     padding: 0.3rem;
     margin: 0 auto;
     margin-top: 0.5rem;
@@ -134,5 +146,60 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
+  }
+
+  .foot address {
+    border-right: 2px solid var(--secondary-color);
+    padding: 0.5rem;
+  }
+
+  .foot section {
+    padding: 0.5rem;
+  }
+
+  /* CSS for discover page */
+  .main-content {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% auto;
+    background-color: var(--secondary-color);
+    margin-top: 1rem;
+    gap: .2rem;
+  }
+
+  .main-content main {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main-content main picture img {
+    opacity: 0.5;
+  }
+
+  .main-content main picture img:hover {
+    opacity: 1;
+  }
+
+  .main-content aside {
+    background-color: var(--default);
+    color: var(--tertiary-color);
+  }
+
+  .main-content .socials {
+    background-color: #119DA4;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials picture {
+    margin: 0 auto;
+    padding: .2rem;
+  }
+
+  .main-content section {
+    margin: 0.5rem;
+    border: 2px solid var(--default);
   }
 }
