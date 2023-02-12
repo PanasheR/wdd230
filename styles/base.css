@@ -67,8 +67,38 @@ h3 {
 }
 
 main {
-  max-width: 760px;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.hero img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.herolabel {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: radial-gradient(#fff, #4D5B97);
+  border: 1px solid rgba(0, 0, 0, .75);
+  padding: 0.8rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.65;
+  /* Buenas */
+}
+
+.herolabel p {
+  margin: 0;
+  padding: .25rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 h2 {
@@ -79,7 +109,6 @@ h2 {
 h3 {
   background-color: #13262F;
   color: #E9E6FF;
-  ;
 }
 
 .container {
@@ -99,10 +128,87 @@ h3 {
   margin: 10px auto;
 }
 
+iframe {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+form fieldset {
+  max-width: 80%;
+  margin: 2rem auto;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: .5rem 2%;
+  background-color: #fff;
+}
+
+form legend {
+  color: #13262F;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #13262F;
+}
+
+form label.top input,
+form label.top select {
+  --webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #13262F;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 1em 0 2rem 2%;
+  width: 90%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+#data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  max-width: max-content;
+  margin: 0 auto;
+  gap: 0.5rem;
+  border: #13262F solid 1px;
+}
+
 footer {
   text-align: center;
   background-color: #13262F;
   color: #EEE5E9;
   height: 100px;
   padding: 20px;
+  margin-top: 1em;
 }

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 43.75rem) {
 
   /* beginning of media query */
   nav {
@@ -7,11 +7,84 @@
 
   .container {
     grid-template-columns: 1fr 1fr;
+    gap: 0.8em;
   }
 
   header img {
     max-height: 150%;
     margin-top: -28px;
+  }
+
+  main {
+    max-width: min-content;
+    margin-bottom: -300px;
+  }
+
+  .hero {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+  }
+
+  .hero img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .herolabel {
+    position: absolute;
+    top: 20px;
+    left: 8px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    /* Buenas */
+  }
+
+  .herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: "Great Vibes", serif;
+  }
+
+  .my-map {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #r {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 90%;
+  }
+
+  .ratinglabels {
+    font-size: 0.8rem;
+    margin: 0 0 1rem 1.1rem;
+  }
+
+  #rating {
+    color: blue;
+  }
+
+  input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+  }
+
+  .ratinglabels {
+    display: flex;
+    justify-content: space-around;
+    width: 93%
+  }
+
+  .ratevalue {
+    margin: 0;
+    flex: 1 1 auto;
   }
 
   /* end of media query */

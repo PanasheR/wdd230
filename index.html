@@ -27,30 +27,43 @@
       <a href="https://www.linkedin.com/" target="_blank" class="menu-item">LinkedIn</a>
     </nav>
     <header>
-      <img src="images/profile-img.jpg" alt="profile image">
+      <picture>
+        <source media="(max-width: 400px)" srcset="./images/profile-img.webp">
+        <source media="(max-width: 960px)" srcset="./images/profile-img.webp">
+        <img src="images/profile-img.webp" alt="profile image" loading="lazy">
+      </picture>
       <h1>Panashe Rusakaniko</h1>
     </header>
     <main>
+      <div class="hero">
+        <picture>
+          <source media="(max-width: 400px)" srcset="./images/sapporo_jan_temple-small.webp">
+          <source media="(max-width: 960px)" srcset="./images/sapporo_jan_temple-large.webp">
+          <img class="fixme" src="./images/sapporo_jan_temple-large.webp" alt="Winter Town" loading="lazy">
+        </picture>
+        <div class="herolabel">
+          <p>Sapporo Jan Temple</p>
+        </div>
+      </div>
       <h2>WDD 230: Course Activity Portal</h2>
       <div class="container">
         <section class="card" id="card1">
           <h3>Learning Activities</h3>
           <ul>
-            <li>Week 01: <a href="https://panasher.github.io/wdd230/week01/holygrail.html">Grail</a> |
-              <a href="https://panasher.github.io/wdd230/week01/media-query.html">Media Query</a>
+            <li>Week 01: <a href="./week01/holygrail.html">Grail</a> |
+              <a href="./week01/media-query.html">Media Query</a>
             </li>
-            <li>Week 02: <a href="https://panasher.github.io/wdd230/week02/design.html">Web Design Principles</a> | <a
+            <li>Week 02: <a href="./week02/design.html">Web Design Principles</a> | <a
                 href="https://codepen.io/kaylo/pen/VwBzLZj">Responsive "Hamburger" Menu</a> | <a
-                href="https://panasher.github.io/wdd230/week02/bom.html">JavaScript DOM Manipulation</a>
+                href="./week02/bom.html">JavaScript DOM Manipulation</a>
             </li>
-            <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a
-                href="https://panasher.github.io/wdd230/week03/lazyload.html">Lazy Loading</a> | <a
-                href="https://codepen.io/kaylo/pen/vYapvKj?editors=1000">Responsive Images - srcset</a> | <a
-                href="https://panasher.github.io/wdd230/week03/bom.html">Web Storage API - localStorage</a></li>
+            <li>Week 03: <a href="./week03/images/landscape.webp">WebP</a> | <a href="./week03/lazyload.html">Lazy
+                Loading</a> | <a href="https://codepen.io/kaylo/pen/vYapvKj?editors=1000">Responsive Images - srcset</a>
+              | <a href="./week03/bom.html">Web Storage API - localStorage</a></li>
             <li>Week 04: <a href="https://codepen.io/kaylo/pen/qByKBEM?editors=1100">CSS Pseudo-Classes</a> | <a
-                href="https://panasher.github.io/wdd230/week04/images/w4combinatorscss.png">Css Combinators</a> | <a
-                href="https://panasher.github.io/wdd230/week04/tablebuild.html">HTML Tables for Data Presentation</a> |
-              <a href="https://panasher.github.io/wdd230/week04/form-start/index.html">HTML Forms</a>
+                href="./week04/images/w4combinatorscss.png">Css Combinators</a> | <a
+                href="./week04/tablebuild.html">HTML Tables for Data Presentation</a> |
+              <a href="./week04/form-start/index.html">HTML Forms</a>
             </li>
             <li>Week 05: </li>
             <li>Week 06: </li>
@@ -58,14 +71,58 @@
         </section>
         <section class="card" id="card2">
           <h3>Project</h3>
-          <a href="https://panasher.github.io/wdd230/week01/chamber-site-plan.html">Chamber of commerce</a>
+          <a href="./week01/chamber-site-plan.html">Chamber of commerce</a>
         </section>
         <section class="card" id="card3">
           <h3>Information</h3>
-          <p>&#127774; - Sunshine all day <br> Visit count: 15</p>
+          <p>&#127774; - Sunshine all day</p>
+          <p><span class="label">Visit count: </span><span class="visits"></span></p>
         </section>
       </div>
     </main>
+    <div class="my-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243102.0138138754!2d31.05685825!3d-17.816637600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a4ee1bdddb35%3A0xa5143b9be5134f2f!2sHarare!5e0!3m2!1sen!2szw!4v1675768629364!5m2!1sen!2szw"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <form action="#" method="get" id="formSubmission">
+      <fieldset>
+        <legend>Contact Us</legend>
+        <div id="formmessage"></div>
+        <label class="top">Full Name<input type="text" name="fullname" id="name" required></label>
+        <label class="top">Email<input type="email" name="emai" id="email" placeholder="someone@example.com"
+            required></label>
+        <label for="r" class="top">Page Rating [ <span id="rating"></span> ]:</label>
+        <div class="rangecontainer">
+          <input type="range" min="1" max="10" id="r" name="r" list="ten" required="required">
+          <div class="ratinglabels">
+            <span class="ratevalue">1</span>
+            <span class="ratevalue">2</span>
+            <span class="ratevalue">3</span>
+            <span class="ratevalue">4</span>
+            <span class="ratevalue">5</span>
+            <span class="ratevalue">6</span>
+            <span class="ratevalue">7</span>
+            <span class="ratevalue">8</span>
+            <span class="ratevalue">9</span>
+            <span class="ratevalue">10</span>
+          </div>
+        </div>
+        <label class="top" for="keyphrase">Key Phrase<input type="password" pattern="(?=.*[^\w\s])^.{5,12}$"
+            name="keyphrase" id="keyphrase" required></label>
+        <label class="top" for="keyphrase2">Re-enter Key Phrase<input type="password" id="keyphrase2" name="keyphrase2"
+            required></label>
+
+        <input type="submit" value="Propose My Course" class="submitBtn">
+      </fieldset>
+    </form>
+    <div id="data">
+      <span>Name</span>
+      <span>Email</span>
+      <span>Rating</span>
+      <span>Username</span>
+    </div>
     <footer>
       <p>
         &copy; <span id="curryear"></span> Panashe Rusakaniko - Harare, Zimbabwe
@@ -74,9 +131,11 @@
 
       </p>
     </footer>
-    <script src="scripts/getDates.js"></script>
-    <script src="scripts/darkmode.js"></script>
-    <script src="scripts/menu.js"></script>
+    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/visitcount.js"></script>
+    <script src="./scripts/modifications.js"></script>
   </body>
 
 </html>
