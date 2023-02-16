@@ -33,7 +33,7 @@
         <label class="top">Business Position<input type="text" name="title"></label>
         <label class="top">Email*<input type="email" placeholder="someone@gmail.com" required></label>
         <label class="top">Cell phone number<input type="tel" required></label>
-        <label class="top">Business Name/title<input type="text" required></label>
+        <label class="top">Business Name/title<input type="text" pattern="[A-Za-z0-9- ]{8,}" required></label>
         <input type="hidden" id="todayDate" name="todayDate">
         <label class="top">Business description <textarea name="description" id="bus-desc" cols="30"
             rows="10"></textarea></label>
