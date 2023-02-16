@@ -1,0 +1,23 @@
+{
+  "family-name": "Diamonds",
+  "date": "2022-02-12",
+  "numberOfPeople": 3,
+  "visitedByBishopric": true,
+  "members": [
+    {
+      "name": "Toby",
+      "gender": "male",
+      "birthdate": "2002-01-18"
+    },
+    {
+      "name": "Jane",
+      "gender": "female",
+      "birthdate": "1980-08-09"
+    },
+    {
+      "name": "George",
+      "gender": "male",
+      "birthdate": "1963-09-12"
+    }
+  ]
+}

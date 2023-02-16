@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WDD 230 homepage by Panashe Rusakaniko for course chamber project.">
+    <meta name="author" content="Panashe Rusakaniko">
+    <meta property="og:title" content="WDD 230 - Chamber project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/hungwe.webp" />
+    <meta property="og:url" content="https://panasher.github.io/wdd230/chamber/" />
+    <title>Panashe Rusakaniko</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+  </head>
+
+  <body>
+    <h1>Hungwe Chamber of Commerce</h1>
+    <nav>
+      <a href="###" id="ham-menu">&#9776;</a>
+      <a href="./index.html" class="menu-item">Home</a>
+      <a href="./discover.html" class="menu-item">Discover</a>
+      <a href="###" class="menu-item">Directory</a>
+      <a href="###" class="menu-item">Join</a>
+    </nav>
+    <h2>Join The Hungwe Chamber of Commerce</h2>
+    <form action="thankyou.html" method="get">
+      <fieldset>
+        <legend>About You</legend>
+        <label class="top">First Name*<input type="text" name="fname" required></label>
+        <label class="top">Last Name*<input type="text" name="lname" required></label>
+        <label class="top">Business Position<input type="text" name="title"></label>
+        <label class="top">Email*<input type="email" placeholder="someone@gmail.com" required></label>
+        <label class="top">Cell phone number<input type="tel" required></label>
+        <label class="top">Business Name/title<input type="text" required></label>
+        <input type="hidden" id="todayDate" name="todayDate">
+        <label class="top">Business description <textarea name="description" id="bus-desc" cols="30"
+            rows="10"></textarea></label>
+      </fieldset>
+      <fieldset>
+        <legend>Membership Level</legend>
+        <h2>Choose Your Membership Plan</h2>
+        <div class="membership-container">
+          <div class="membership4">
+            <span>
+              <h3>NP Membership</h3>
+              <ol>
+                <li>Can attend all chamber meetings</li>
+                <li>Can attend training sessions</li>
+                <li>Can advertise on the platform</li>
+                <li>Cost Free</li>
+              </ol>
+            </span>
+            <label class="sbs"><input type="radio" name="membership" value="np membership">NP Membership</label>
+          </div>
+          <div class="membership3">
+            <span>
+              <h3>Bronze Membership</h3>
+              <ol>
+                <li>Access to annual general meetings only</li>
+                <li>15% discount to all chamber events and training sessions</li>
+                <li>Healthcare</li>
+                <li>Cost: USD125</li>
+              </ol>
+            </span>
+            <label class="sbs"><input type="radio" name="membership" value="bronze membership">Bronze Membership</label>
+          </div>
+          <div class="membership2">
+            <span>
+              <h3>Silver Membership</h3>
+              <ol>
+                <li>Access annual general meetings and monthly meetings</li>
+                <li>50% discount to training sessions</li>
+                <li>Healthcare</li>
+                <li>Cost: USD250</li>
+              </ol>
+            </span>
+            <label class="sbs"><input type="radio" name="membership" value="silver membership">Silver Membership</label>
+          </div>
+          <div class="membership1">
+            <span>
+              <h3>Gold Membership</h3>
+              <ol>
+                <li>Access to all chamber events</li>
+                <li>Access to all training sessions</li>
+                <li>Healthcare</li>
+                <li>Cost: USD500</li>
+              </ol>
+            </span>
+            <label class="sbs"><input type="radio" name="membership" value="gold membership">Gold Membership</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <input type="submit" value="Join Chamber" class="submitBtn">
+    </form>
+
+    <footer>
+      <div class="foot">
+        <address>
+          Hungwe Chamber of Commerce<br>
+          114 Hungwe Avenue<br>
+          Private Bag 114
+        </address>
+        <section>
+          info@hungwechamber.co.zw<br>
+          +263 747 829<br>
+          Location map
+        </section>
+      </div>
+      <div class="foot-footer">
+        <p>&copy; Hungwe Chamber | WDD230 Project | Last Modification: <span id="lastModified"> </span></p>
+      </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/getDates.js"></script>
+  </body>
+
+</html>

@@ -66,7 +66,6 @@
   main {
     max-width: 100%;
     margin: 0 auto;
-    background-color: var(--secondary-color);
   }
 
   .banner {
@@ -142,15 +141,21 @@
 
   /* CSS for discover page */
   .main-content {
-    margin: 0 auto;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    background-color: var(--secondary-color);
-    gap: .2rem;
+    gap: .25rem;
   }
 
   .main-content main {
     background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #fff;
+  }
+
+  .main-content main picture {
+    margin: .2rem;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -168,11 +173,121 @@
 
   .socials picture {
     margin: 0 auto;
-    padding: .2rem;
   }
 
   .main-content section {
-    margin: 0.5rem;
+    margin: 0.2rem;
     border: 2px solid var(--default);
+  }
+
+  /*css for join */
+  /* ---------- FORM -------------*/
+  form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--default);
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: var(--secondary-color);
+  }
+
+  form legend {
+    color: var(--default);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+  }
+
+  form label.top,
+  form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--default);
+  }
+
+  form label.top input,
+  form label.top textarea,
+  form label.top select {
+    --webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--default);
+    width: 100%;
+    max-width: 20rem;
+    background-color: #999;
+  }
+
+  form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+  }
+
+  form input.submitBtn {
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 90%;
+    max-width: 20rem;
+  }
+
+  form label.top input:required {
+    border-left: red solid 6px;
+  }
+
+  form label.top input:required:valid {
+    border-left: green solid 6px;
+  }
+
+  .membership-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+  }
+
+  .membership1 {
+    max-width: 25rem;
+    border: #555 2px solid;
+    border-radius: 5%;
+    padding: .18rem;
+    background-color: goldenrod;
+  }
+
+  .membership2 {
+    max-width: 25rem;
+    border: #555 2px solid;
+    border-radius: 5%;
+    padding: .18rem;
+    background-color: silver;
+  }
+
+  .membership3 {
+    max-width: 25rem;
+    border: #555 2px solid;
+    border-radius: 5%;
+    padding: .18rem;
+    background-color: brown;
+  }
+
+  .membership4 {
+    max-width: 25rem;
+    border: #555 2px solid;
+    border-radius: 5%;
+    padding: .18rem;
+    background-color: skyblue;
+  }
+
+  /*thank you CSS*/
+  .thanks {
+    height: 17.5rem;
+  }
+
+  .thank-you {
+    background-color: #fff;
+    padding: 2rem;
   }
 }
