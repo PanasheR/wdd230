@@ -17,7 +17,6 @@
 
   main {
     max-width: min-content;
-    margin-bottom: -300px;
   }
 
   .hero {
@@ -79,7 +78,7 @@
   .ratinglabels {
     display: flex;
     justify-content: space-around;
-    width: 93%
+    width: 97%
   }
 
   .ratevalue {

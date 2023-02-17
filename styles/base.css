@@ -83,6 +83,7 @@ main {
 .hero {
   position: relative;
   border: 1px solid rgba(0, 0, 0, .1);
+  box-shadow: 0 0 30px var(--primary-color);
 }
 
 .hero img {
@@ -123,14 +124,18 @@ h3 {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 1px var(--default-black) solid;
+  padding: 10px;
+  box-shadow: 0 0 30px var(--primary-color);
+  margin-bottom: 2rem;
 }
 
 .card {
   width: 320px;
   border-radius: 3px;
   box-shadow: 1px 1px 4px 1px var(--default-black);
-  background-color: var(--default-white);
+  background-color: var(--secondary-color);
   font-family: "Arial", sans-serif;
   overflow: hidden;
   padding: 10px;
@@ -140,6 +145,7 @@ h3 {
 iframe {
   max-width: 100%;
   margin: 0 auto;
+  border: #000000 2px solid;
 }
 
 form fieldset {
@@ -148,13 +154,16 @@ form fieldset {
   border: 2px solid var(--default-black);
   border-radius: 10px;
   padding: .5rem 2%;
-  background-color: #fff;
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 20px #13262F;
 }
 
 form legend {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin: 0 1rem;
   padding: 0 .5rem;
+  background-color: #13262F;
+  font-size: 3vh;
 }
 
 form label.top,
@@ -175,7 +184,6 @@ form label.top select {
   color: #555;
   width: 100%;
   max-width: 20rem;
-  background-color: rgba(0, 0, 0, 1);
 }
 
 form label.sbs {
@@ -201,6 +209,19 @@ form label.top input:required {
 
 form label.top input:required:valid {
   border-left: green solid 6px;
+}
+
+
+#r {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 90%;
+}
+
+.ratinglabels {
+  display: flex;
+  justify-content: space-around;
+  width: 92%
 }
 
 #data {
