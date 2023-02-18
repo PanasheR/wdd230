@@ -1,32 +1,42 @@
 const cards = document.querySelector('#cards');
-const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+const url = 'https://panasher.github.io/wdd230/chamber/data/members.json';
 
 async function getActivityData() {
   const response = await fetch(url);
   const data = await response.json();
-  //console.table(data.prophets);
-  displayData(data.prophets); // note that we reference the prophets array of the JSON data object, not just the object
+  displayData(data.members);
 }
 
-const displayData = (prophets) => {
-  prophets.forEach((prophet) => {
+const displayData = (members) => {
+  members.forEach((member) => {
     // Create elements to add to the div.cards element
     let card = document.createElement('section');
-    let fullName = document.createElement('h2');
+    let name = document.createElement('h2');
+    let parag = document.createElement('p');
     let portrait = document.createElement('img');
+    let websiteLink = document.createElement('a');
 
-    // Build the h2 content out to show the prophet's full name
-    fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+    name.textContent = `${member.name}`;
     // Build the image portrait by setting all the relevant attributes
-    portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
+    portrait.setAttribute('src', member.icon);
+    portrait.setAttribute('alt', `Portait of ${member.name}`);
     portrait.setAttribute('loading', 'lazy');
     portrait.setAttribute('width', '340');
     portrait.setAttribute('height', '440');
 
+    websiteLink.setAttribute('href', member.website);
+    websiteLink.textContent = member.name;
+
+    parag.appendChild(mamber.address);
+    parag.appendChild(mamber.phone);
+    parag.appendChild(mamber.membership);
+    parag.appendChild(mamber.donations);
+    parag.appendChild(mamber.address);
     // Append the section(card) with the created elements
-    card.appendChild(fullName);
+    card.appendChild(name);
     card.appendChild(portrait);
+    card.appendChild(websiteLink);
+    card.appendChild(parag)
 
     cards.appendChild(card);
   }); // end of arrow function and forEach loop

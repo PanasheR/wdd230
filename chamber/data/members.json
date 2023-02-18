@@ -3,57 +3,64 @@
     {
       "name": "Econet Wireless",
       "address": "54 Willowvalle Rd",
-      "phone-numbers": "+263 822 719",
-      "icon": ,
-      "membership-level": "Gold",
+      "phone": "+263 822 719",
+      "website": "http://www.econetwireless.com/",
+      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/econet.webp",
+      "membership": "Gold",
       "donations": "USD50000"
     },
     {
       "name": "Telone",
       "address": "328 Msasa Drive",
-      "phone-numbers": "+263 448 612",
-      "icon": ,
-      "membership-level": "Gold",
+      "phone": "+263 448 612",
+      "website": "http://www.telone.co.zw/",
+      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/telone.webp",
+      "membership": "Gold",
       "donations": "USD950000"
     },
     {
       "name": "SECTA Zimbabwe",
       "address": "11 Florida Rd",
-      "phone-numbers": "+263 888 692",
-      "icon": ,
-      "membership-level": "NP",
+      "phone": "+263 888 692",
+      "website": "https://kubatana.net/2022/03/03/sustainable-environmental-conservation-trust-africa-s-e-c-t-a-profile/",
+      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/secta.webp",
+      "membership": "NP",
       "donations": "USD100000"
     },
     {
       "name": "PAUDC",
       "address": "328 King George Rd",
-      "phone-numbers": "+263 937 548",
-      "icon": ,
-      "membership-level": "Bronze",
+      "phone": "+263 937 548",
+      "website": "https://en.wikipedia.org/wiki/Pan_African_Universities_Debating_Championship",
+      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/paudc.webp",
+      "membership": "Bronze",
       "donations": "USD2000"
     },
     {
       "name": "Kapjin",
       "address": "36671 Jacaranda St",
-      "phone-numbers": "+263 903 658",
-      "icon": ,
-      "membership-level": "NP",
+      "phone": "+263 903 658",
+      "website": "https://kapjin.co.zw",
+      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/kapjin.webp",
+      "membership": "NP",
       "donations": "USD4500"
     },
     {
       "name": "West Property",
       "address": "43 Pokugara Estate",
-      "phone-numbers": "+263 783 038",
-      "icon": ,
-      "membership-level": "Silver",
+      "phone": "+263 783 038",
+      "website": "https://www.westproperty.co.zw/",
+      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/west.webp",
+      "membership": "Silver",
       "donations": "USD150000"
     },
     {
       "name": "Gombwetunga",
       "address": "21 Everlasting St",
-      "phone-numbers": "+263 930 673",
-      "icon": ,
-      "membership-level": "Bronze",
+      "phone": "+263 930 673",
+      "website": "http://gombwetunga.org",
+      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/gombwe.webp",
+      "membership": "Bronze",
       "donations": "USD15000"
     }
   ]
