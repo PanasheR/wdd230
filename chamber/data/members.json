@@ -1,0 +1,60 @@
+{
+  "companies": [
+    {
+      "name": "Econet Wireless",
+      "address": "54 Willowvalle Rd",
+      "phone-numbers": "+263 822 719",
+      "icon": ,
+      "membership-level": "Gold",
+      "donations": "USD50000"
+    },
+    {
+      "name": "Telone",
+      "address": "328 Msasa Drive",
+      "phone-numbers": "+263 448 612",
+      "icon": ,
+      "membership-level": "Gold",
+      "donations": "USD950000"
+    },
+    {
+      "name": "SECTA Zimbabwe",
+      "address": "11 Florida Rd",
+      "phone-numbers": "+263 888 692",
+      "icon": ,
+      "membership-level": "NP",
+      "donations": "USD100000"
+    },
+    {
+      "name": "PAUDC",
+      "address": "328 King George Rd",
+      "phone-numbers": "+263 937 548",
+      "icon": ,
+      "membership-level": "Bronze",
+      "donations": "USD2000"
+    },
+    {
+      "name": "Kapjin",
+      "address": "36671 Jacaranda St",
+      "phone-numbers": "+263 903 658",
+      "icon": ,
+      "membership-level": "NP",
+      "donations": "USD4500"
+    },
+    {
+      "name": "West Property",
+      "address": "43 Pokugara Estate",
+      "phone-numbers": "+263 783 038",
+      "icon": ,
+      "membership-level": "Silver",
+      "donations": "USD150000"
+    },
+    {
+      "name": "Gombwetunga",
+      "address": "21 Everlasting St",
+      "phone-numbers": "+263 930 673",
+      "icon": ,
+      "membership-level": "Bronze",
+      "donations": "USD15000"
+    }
+  ]
+}
