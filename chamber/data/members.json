@@ -5,7 +5,7 @@
       "address": "54 Willowvalle Rd",
       "phone": "+263 822 719",
       "website": "http://www.econetwireless.com/",
-      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/econet.png",
+      "icon": "./images/econet.png",
       "membership": "Gold",
       "donations": "USD50000"
     },
@@ -14,7 +14,7 @@
       "address": "328 Msasa Drive",
       "phone": "+263 448 612",
       "website": "http://www.telone.co.zw/",
-      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/teltwo.png",
+      "icon": "./images/teltwo.png",
       "membership": "Gold",
       "donations": "USD950000"
     },
@@ -23,7 +23,7 @@
       "address": "11 Florida Rd",
       "phone": "+263 888 692",
       "website": "https://kubatana.net/2022/03/03/sustainable-environmental-conservation-trust-africa-s-e-c-t-a-profile/",
-      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/secta.png",
+      "icon": "./images/secta.png",
       "membership": "NP",
       "donations": "USD100000"
     },
@@ -32,7 +32,7 @@
       "address": "328 King George Rd",
       "phone": "+263 937 548",
       "website": "https://en.wikipedia.org/wiki/Pan_African_Universities_Debating_Championship",
-      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/paudc.png",
+      "icon": "./images/paudc.png",
       "membership": "Bronze",
       "donations": "USD2000"
     },
@@ -41,7 +41,7 @@
       "address": "36671 Jacaranda St",
       "phone": "+263 903 658",
       "website": "https://kapjin.co.zw",
-      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/kapjin.png",
+      "icon": "./images/kapjin.png",
       "membership": "NP",
       "donations": "USD4500"
     },
@@ -50,7 +50,7 @@
       "address": "43 Pokugara Estate",
       "phone": "+263 783 038",
       "website": "https://www.westproperty.co.zw/",
-      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/westp.png",
+      "icon": "./images/westp.png",
       "membership": "Silver",
       "donations": "USD150000"
     },
@@ -59,7 +59,7 @@
       "address": "21 Everlasting St",
       "phone": "+263 930 673",
       "website": "http://gombwetunga.org",
-      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/gombwe.png",
+      "icon": "./images/gombwe.png",
       "membership": "Bronze",
       "donations": "USD15000"
     }
