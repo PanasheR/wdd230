@@ -5,7 +5,7 @@
       "address": "54 Willowvalle Rd",
       "phone": "+263 822 719",
       "website": "http://www.econetwireless.com/",
-      "icon": "https://github.com/PanasheR/wdd230/blob/master/chamber/images/econet.webp",
+      "icon": "./images/econet.webp",
       "membership": "Gold",
       "donations": "USD50000"
     },

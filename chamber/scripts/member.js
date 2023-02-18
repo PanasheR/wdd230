@@ -4,43 +4,31 @@ const url = 'https://panasher.github.io/wdd230/chamber/data/members.json';
 async function getActivityData() {
   const response = await fetch(url);
   const data = await response.json();
-  displayData(data.members);
+  displayData(data.companies); // note that we reference the prophets array of the JSON data object, not just the object
 }
 
-const displayData = (members) => {
-  members.forEach((member) => {
+const displayData = (companies) => {
+  companies.forEach((company) => {
     // Create elements to add to the div.cards element
     let card = document.createElement('section');
-    let name = document.createElement('h2');
-    let parag = document.createElement('p');
+    let companyName = document.createElement('h2');
     let portrait = document.createElement('img');
-    let websiteLink = document.createElement('a');
 
-    name.textContent = `${member.name}`;
+    // Build the h2 content out to show the prophet's full name
+    companyName.textContent = `${company.name}`;
     // Build the image portrait by setting all the relevant attributes
-    portrait.setAttribute('src', member.icon);
-    portrait.setAttribute('alt', `Portait of ${member.name}`);
+    portrait.setAttribute('src', company.icon);
+    portrait.setAttribute('alt', `Portait of ${company.name} ${company.lastname}`);
     portrait.setAttribute('loading', 'lazy');
     portrait.setAttribute('width', '340');
     portrait.setAttribute('height', '440');
 
-    websiteLink.setAttribute('href', member.website);
-    websiteLink.textContent = member.name;
-
-    parag.appendChild(mamber.address);
-    parag.appendChild(mamber.phone);
-    parag.appendChild(mamber.membership);
-    parag.appendChild(mamber.donations);
-    parag.appendChild(mamber.address);
     // Append the section(card) with the created elements
-    card.appendChild(name);
+    card.appendChild(companyName);
     card.appendChild(portrait);
-    card.appendChild(websiteLink);
-    card.appendChild(parag)
 
     cards.appendChild(card);
   }); // end of arrow function and forEach loop
 }
 
 getActivityData();
-
