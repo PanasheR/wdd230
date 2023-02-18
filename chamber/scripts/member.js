@@ -18,7 +18,7 @@ const displayData = (companies) => {
     companyName.textContent = `${company.name}`;
     // Build the image portrait by setting all the relevant attributes
     portrait.setAttribute('src', company.icon);
-    portrait.setAttribute('alt', `Portait of ${company.name} ${company.lastname}`);
+    portrait.setAttribute('alt', `Portait of ${company.name}`);
     portrait.setAttribute('loading', 'lazy');
     portrait.setAttribute('width', '340');
     portrait.setAttribute('height', '440');
