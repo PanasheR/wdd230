@@ -290,4 +290,86 @@
     background-color: #fff;
     padding: 2rem;
   }
+
+  /*directory css*/
+  .menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #bbb;
+    text-align: center;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    border: var(--default) 3px solid;
+    box-shadow: 0 0 50px #777;
+  }
+
+  .cards section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards section img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .list section {
+    display: grid;
+    grid-template-columns: 10% auto;
+    margin: 0;
+    padding: 0.05rem;
+  }
+
+  .list section>* {
+    margin: 0 1rem;
+  }
+
+  .list section ul {
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+  }
+
+  .list section ul li {
+    margin: 2px;
+    max-width: 20vh;
+    padding: 0px 5px;
+  }
+
+  .list section img {
+    display: none;
+    /* smaller viewports only */
+  }
+
+  .list section h2 {
+    font-size: 1rem;
+    margin-top: 2em;
+    font-style: italic;
+  }
+
+  .list section:nth-child(even) {
+    background-color: #bed;
+  }
+
+  .list section:nth-child(odd) {
+    background-color: #fff;
+  }
 }
