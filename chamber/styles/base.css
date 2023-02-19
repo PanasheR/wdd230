@@ -296,7 +296,7 @@
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    background-color: #bbb;
+    background-color: var(--default);
     text-align: center;
   }
 
@@ -333,7 +333,7 @@
 
   .list section {
     display: grid;
-    grid-template-columns: 10% auto;
+    grid-template-columns: 20% auto;
     margin: 0;
     padding: 0.05rem;
   }
